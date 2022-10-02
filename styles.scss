@@ -1,0 +1,419 @@
+$darkBlue:hsl(243, 87%, 12%);
+$DesaturatedBlue: hsl(238, 22%, 44%);
+$BrightBlue: hsl(224, 93%, 58%);
+$ModerateCyan: hsl(170, 45%, 43%);
+$LightGrayishBlue: hsl(240, 75%, 98%);
+$LightGray: hsl(0, 0%, 75%);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+body> *{
+    font-family: 'Open Sans', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+    align-items: center;
+    
+    img{
+        padding-top: 1em;
+        width:65%;
+        
+    }
+
+    .links{
+        padding: 0;
+        
+        ul{
+            padding: 0;
+            margin: 0 auto;
+            
+
+            a{
+                text-decoration: none;
+                margin-right: .75em;
+                color: $DesaturatedBlue;
+            }
+        }
+    }
+
+}
+main{
+    padding: 0;
+    margin: 0;
+}
+.mainBody{
+    margin-top: 7em;
+    padding: 0 1em;
+
+    .files{
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .header{
+        h1{
+            font-size: clamp(2.0em, 1.5vw, 1rem);
+            text-align: center;
+            font-family: 'Raleway', sans-serif;
+        }
+        p{
+            font-size: clamp(1.25em, 1.5vw, 1rem);
+            text-align: center;
+            padding-top: 1em;
+            color: $darkBlue;
+        }
+        div{
+            p{
+                text-align: left;
+                padding: 0;
+                margin:0;
+                color: red;
+                width: 15em;
+                font-size: .8em;
+            }
+        }
+    }
+
+    input{
+        width: 91%;
+        padding: 1em;
+        border-radius: .5em;
+        border: .1em thin;
+        font-size: 1em;
+        
+    }
+    button{
+        width: 100%;
+        padding: 1em;
+        margin-top: 1.25em;
+        border-radius: .5em;
+        margin-bottom: 6em;
+        color: white;
+        background-color: $BrightBlue;
+        border: none;
+        font-size: 1em;
+    }
+
+}
+
+.curve{
+
+        width: 100%;
+        
+}
+.header3{
+    
+    h3{
+        font-size: clamp(1.25em, 1.5vw, 1rem );
+        text-align: center;
+        color: black;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+    }
+    p{
+        margin:0 1em;
+        font-size: 1.15em;
+        color: $LightGray;
+
+    }
+}
+
+.files2{
+    margin:0;
+    padding:0;
+    width: 100%;
+}
+.secondimg{
+    background-color: $LightGrayishBlue;
+    margin-right: 0;
+    width: 100%;
+    position: relative;
+    margin-bottom: 0;
+    bottom:.5em;
+    border: solid $LightGrayishBlue .005em;
+
+    .fyloWorks{
+        padding-top: 2em;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        padding-bottom: .5em;
+        border-bottom: .08em $ModerateCyan solid;
+        a{
+            text-decoration: none;
+            color: $ModerateCyan;
+            
+        }
+        img{
+            width: 6.5%;
+            padding-left: .25em;
+        }
+    }
+    
+   
+}
+.comment{
+    background-color: white;
+    width:17em;
+    display: grid;
+    justify-content: center;
+    margin: auto;
+    margin-top: 2.5em;
+    margin-bottom: 6em;
+    padding: 1.5em;
+    box-shadow:0 .25em .25em $LightGray;
+
+    p{
+
+        color: $DesaturatedBlue;
+    }
+
+    .testimonialName{
+        
+        display: flex;
+        align-items: center;
+        margin:auto;
+
+        div{
+            margin-left: .55em;
+        }
+        h4{
+            margin: 0;
+            padding-bottom: .25em;
+        }
+        p{
+            margin:0;
+            font-size: .8em;
+            color: $DesaturatedBlue;
+        }
+        img{
+            border-radius: 50%;
+            width: 15%;
+            height: 50%;
+        }
+    }
+}
+
+.earlyAccess{
+    width: calc(100% - 3.4em);
+    color:white;
+    background-color: #3d508e;
+    margin-top: 0;
+    border: solid #3d508e;
+    display: grid;
+    text-align: center;
+    padding: 2em 1.5em;
+
+    p{
+        font-size: .9em;
+        width: 85%;
+        margin: auto;
+    }
+    div{
+        #emails{
+            text-align: left;
+            padding: 0;
+            margin:0;
+            width: 15em;
+            font-size: .8em;
+        }
+    }
+
+    button{
+        width:70%;
+        margin:auto;
+        margin-top: .5em;
+        color: white;
+        background-color: $BrightBlue;
+        border: none;
+        padding: .5em;
+        margin-bottom: 1.75em;
+    }
+    input{
+        width:67%;
+        margin:auto;
+        margin-top: 1.2em;
+        padding: .5em;
+        border: none;
+        color: $LightGray;
+    }
+}
+
+footer{
+    background-color: $darkBlue;
+    color:white;
+    padding-bottom: 3em;
+    .logo{
+        margin-top: 2em;
+        width: 45%;
+        margin-left:2.5em ;
+    }
+    p{
+        padding-left: 2.5em;
+        text-align: justify;
+        img{
+            padding-right: 1em;
+        }
+    }
+
+    .footerLinks{
+        margin-top: 2.5em;
+    }
+    a{
+        text-decoration: none;
+        color:white;
+        display: grid;
+        padding-bottom: 1em;
+
+    }
+    a:hover{
+        color: $BrightBlue;
+    }
+
+    .socialIcons{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        
+
+        i{
+            margin:.5em
+        }
+    }
+}
+
+@media (min-width:600px) {
+    nav{
+        img{
+            padding-left: 2em;
+        }
+        .links{
+
+            a{
+                padding-right: 2em;
+                
+            }
+        }
+    }
+    .mainBody{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 6em;
+        padding: 0 2.5em;
+        .header{
+            grid-row-start:1 ;
+            grid-row-end: 2;
+            h1{
+                text-align: left;
+                font-size: 2.75em;
+            }
+            p{
+                text-align: left;
+            }
+            div{
+
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                grid-auto-rows: minmax(10px auto);
+                margin: auto;
+                align-items: center;
+                gap:.5em;
+                input{
+                    height: 1em;
+                    margin: 0;
+    
+                }
+                button{
+                    margin: 0;
+                }
+                
+            }
+        }
+        
+    }
+
+    .secondimg{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        margin: auto;
+        .header3{
+            grid-row-start:1 ;
+            grid-row-end: 2;
+            h3{
+                text-align: left;
+                font-size: 2.25em;
+                padding-left: 1em;
+            }
+            .sharefile{
+                padding-left: 1em;
+            }
+            .switch{
+                text-align: left;
+                padding-left: 1em;
+                width:80%;
+                padding-bottom:.5em;
+            }
+        }
+        .fyloWorks, .comment{
+            margin-left: 2em;
+        }
+
+        
+    }
+    .earlyAccess{
+        grid-template-columns: 2fr 1fr;
+        align-items: center;
+        text-align: left;
+        width: calc(100% - .4em);
+        padding: 5em 0;
+        justify-content: space-between;
+
+        h2{
+            padding-left: 1em;
+        }
+        p{
+            width:40%;
+            margin:0;
+            padding-left: 2em;
+        }
+
+        .getStarted{
+            display: grid;
+            width: 100%;
+            input{
+                grid-column-start: 1;
+                grid-column-end: 3;
+                margin: 0;
+            }
+            button{
+                grid-column-start: 1;
+                grid-column-end: 2;
+                margin: 0;
+                margin-top: 1em;
+            }
+        }
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-items: center;
+        margin: auto;
+       
+        ul{
+            padding-top: 4.75em;
+        }
+        .socialIcons{
+            margin: 0;
+        }
+    }
+}
